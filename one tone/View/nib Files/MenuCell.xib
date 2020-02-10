@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gilroy-Bold.ttf">
+            <string>Gilroy-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MenuCollectionViewCell" id="2bw-fQ-JM1" customClass="MenuCollectionViewCell" customModule="one_tone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="187.5" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="187.5" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O3r-tC-E93">
+                        <rect key="frame" x="73.5" y="16.5" width="39" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5fA-e3-Erd">
+                        <rect key="frame" x="118.5" y="17.5" width="15" height="15"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SkA-uI-Syz">
+                                <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
+                                <color key="backgroundColor" red="0.93390554189999997" green="0.35911375280000002" blue="0.36507850889999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="gFy-VC-7jz"/>
+                                    <constraint firstAttribute="width" constant="15" id="gnd-UG-WYO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="O3r-tC-E93" firstAttribute="centerX" secondItem="2bw-fQ-JM1" secondAttribute="centerX" id="NjF-bT-YAB"/>
+                <constraint firstItem="O3r-tC-E93" firstAttribute="centerY" secondItem="2bw-fQ-JM1" secondAttribute="centerY" id="cPA-ZL-bKU"/>
+                <constraint firstItem="5fA-e3-Erd" firstAttribute="centerY" secondItem="2bw-fQ-JM1" secondAttribute="centerY" id="evQ-mc-uY9"/>
+                <constraint firstItem="5fA-e3-Erd" firstAttribute="leading" secondItem="O3r-tC-E93" secondAttribute="trailing" constant="6" id="fsq-0j-cfb"/>
+            </constraints>
+            <connections>
+                <outlet property="cell_Label" destination="O3r-tC-E93" id="Fgm-qP-s3g"/>
+                <outlet property="labelIcon" destination="SkA-uI-Syz" id="fkv-1x-ggE"/>
+            </connections>
+            <point key="canvasLocation" x="67" y="52"/>
+        </collectionViewCell>
+    </objects>
+</document>

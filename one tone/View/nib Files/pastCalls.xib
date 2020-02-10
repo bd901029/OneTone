@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="pastCalls" id="C92-yb-wBC" customClass="pastCalls" customModule="one_tone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ef7-me-la5">
+                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fTr-4c-9CM">
+                                <rect key="frame" x="5" y="5" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Cpn-mK-RH8"/>
+                                    <constraint firstAttribute="height" constant="50" id="TMv-Gv-sQY"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fTr-4c-9CM" firstAttribute="centerY" secondItem="ef7-me-la5" secondAttribute="centerY" id="1UK-Eb-et1"/>
+                            <constraint firstItem="fTr-4c-9CM" firstAttribute="centerX" secondItem="ef7-me-la5" secondAttribute="centerX" id="E2a-kp-K3v"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="ef7-me-la5" firstAttribute="top" secondItem="C92-yb-wBC" secondAttribute="top" id="2Mb-r6-s4v"/>
+                <constraint firstItem="ef7-me-la5" firstAttribute="leading" secondItem="C92-yb-wBC" secondAttribute="leading" id="NYX-dA-5qs"/>
+                <constraint firstAttribute="trailing" secondItem="ef7-me-la5" secondAttribute="trailing" id="SNM-Wo-2Wy"/>
+                <constraint firstAttribute="bottom" secondItem="ef7-me-la5" secondAttribute="bottom" id="kFB-6E-HjV"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="K9H-Ie-DgM"/>
+            <size key="customSize" width="55" height="55"/>
+            <connections>
+                <outlet property="person" destination="fTr-4c-9CM" id="l72-cf-nda"/>
+            </connections>
+            <point key="canvasLocation" x="-102.5" y="-52.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

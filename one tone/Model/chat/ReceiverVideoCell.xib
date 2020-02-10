@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ReceiverVideoCell" rowHeight="201" id="8Rg-J1-AJM" customClass="ReceiverVideoCell" customModule="one_tone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="201"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8Rg-J1-AJM" id="RU6-Cm-j0A">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="200.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultImage" translatesAutoresizingMaskIntoConstraints="NO" id="h9f-mx-9Aq">
+                        <rect key="frame" x="337" y="2" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Nb8-xl-N0m"/>
+                            <constraint firstAttribute="width" constant="30" id="eRP-lT-YNA"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="55F-rd-Xux">
+                        <rect key="frame" x="148" y="2" width="185" height="196.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="senderImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="bRu-9w-ckh">
+                                <rect key="frame" x="0.0" y="0.0" width="185" height="196.5"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vZ4-Tn-00o">
+                                <rect key="frame" x="4" y="4" width="177" height="175.5"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="185" id="9oK-59-tzr"/>
+                            <constraint firstAttribute="bottom" secondItem="bRu-9w-ckh" secondAttribute="bottom" id="AQ1-zz-8jO"/>
+                            <constraint firstItem="bRu-9w-ckh" firstAttribute="top" secondItem="55F-rd-Xux" secondAttribute="top" id="GrA-B3-vQE"/>
+                            <constraint firstItem="vZ4-Tn-00o" firstAttribute="leading" secondItem="55F-rd-Xux" secondAttribute="leading" constant="4" id="IJG-Bn-U4s"/>
+                            <constraint firstAttribute="bottom" secondItem="vZ4-Tn-00o" secondAttribute="bottom" constant="17" id="KoJ-da-wbb"/>
+                            <constraint firstAttribute="trailing" secondItem="vZ4-Tn-00o" secondAttribute="trailing" constant="4" id="ZJD-hX-aus"/>
+                            <constraint firstItem="vZ4-Tn-00o" firstAttribute="top" secondItem="55F-rd-Xux" secondAttribute="top" constant="4" id="gMP-V5-kni"/>
+                            <constraint firstItem="bRu-9w-ckh" firstAttribute="leading" secondItem="55F-rd-Xux" secondAttribute="leading" id="moG-YK-MMt"/>
+                            <constraint firstAttribute="trailing" secondItem="bRu-9w-ckh" secondAttribute="trailing" id="opt-Ce-BPD"/>
+                            <constraint firstAttribute="height" constant="196.5" id="rl7-7A-9rL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="h9f-mx-9Aq" firstAttribute="top" secondItem="RU6-Cm-j0A" secondAttribute="top" constant="2" id="7cr-Z4-Nlx"/>
+                    <constraint firstItem="55F-rd-Xux" firstAttribute="top" secondItem="RU6-Cm-j0A" secondAttribute="top" constant="2" id="FVK-Jz-6n9"/>
+                    <constraint firstAttribute="bottom" secondItem="55F-rd-Xux" secondAttribute="bottom" constant="2" id="TD0-3m-3ub"/>
+                    <constraint firstItem="h9f-mx-9Aq" firstAttribute="leading" secondItem="55F-rd-Xux" secondAttribute="trailing" constant="4" id="ear-GY-lnP"/>
+                    <constraint firstAttribute="trailing" secondItem="h9f-mx-9Aq" secondAttribute="trailing" constant="8" id="xZa-MZ-Mxa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="reciverProfilePic" destination="h9f-mx-9Aq" id="9ut-52-QGr"/>
+                <outlet property="reciverVideo" destination="vZ4-Tn-00o" id="WA2-Bs-Y86"/>
+            </connections>
+            <point key="canvasLocation" x="-73" y="131"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="defaultImage" width="16" height="16"/>
+        <image name="senderImage.png" width="208" height="207"/>
+    </resources>
+</document>

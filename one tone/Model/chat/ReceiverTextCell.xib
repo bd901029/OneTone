@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReceiverTextCell" rowHeight="258" id="CeX-tF-IzQ" customClass="ReceiverTextCell" customModule="one_tone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="258"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CeX-tF-IzQ" id="ZSc-rh-AmB">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="257.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OLg-oe-p3q">
+                        <rect key="frame" x="8" y="0.0" width="359" height="257.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BvT-XN-Q5w">
+                                <rect key="frame" x="157" y="2" width="194" height="253.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="send.png" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oag-1I-DNj">
+                                        <rect key="frame" x="0.0" y="0.0" width="194" height="253.5"/>
+                                    </imageView>
+                                    <label opaque="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dz2-nH-Ewh">
+                                        <rect key="frame" x="4" y="4" width="180" height="245.5"/>
+                                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="15"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="dz2-nH-Ewh" firstAttribute="leading" secondItem="BvT-XN-Q5w" secondAttribute="leading" constant="4" id="50q-hu-mG5"/>
+                                    <constraint firstItem="dz2-nH-Ewh" firstAttribute="top" secondItem="BvT-XN-Q5w" secondAttribute="top" constant="4" id="8FL-FX-V5d"/>
+                                    <constraint firstItem="Oag-1I-DNj" firstAttribute="top" secondItem="BvT-XN-Q5w" secondAttribute="top" id="FHR-Vh-fgo"/>
+                                    <constraint firstItem="Oag-1I-DNj" firstAttribute="leading" secondItem="BvT-XN-Q5w" secondAttribute="leading" id="IZn-JJ-yNu"/>
+                                    <constraint firstAttribute="bottom" secondItem="dz2-nH-Ewh" secondAttribute="bottom" constant="4" id="QOC-gx-Sb5"/>
+                                    <constraint firstAttribute="trailing" secondItem="dz2-nH-Ewh" secondAttribute="trailing" constant="10" id="Sec-nz-7sB"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="aMk-XD-I8P"/>
+                                    <constraint firstAttribute="bottom" secondItem="Oag-1I-DNj" secondAttribute="bottom" id="wcI-PN-tLu"/>
+                                    <constraint firstAttribute="trailing" secondItem="Oag-1I-DNj" secondAttribute="trailing" id="z6I-o1-6QT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BvT-XN-Q5w" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="OLg-oe-p3q" secondAttribute="leading" constant="60" id="Ief-iN-P82"/>
+                            <constraint firstAttribute="trailing" secondItem="BvT-XN-Q5w" secondAttribute="trailing" constant="8" id="cyN-Iy-sUo"/>
+                            <constraint firstAttribute="bottom" secondItem="BvT-XN-Q5w" secondAttribute="bottom" constant="2" id="taN-CK-b5q"/>
+                            <constraint firstItem="BvT-XN-Q5w" firstAttribute="top" secondItem="OLg-oe-p3q" secondAttribute="top" constant="2" id="z6S-BA-n1z"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="OLg-oe-p3q" firstAttribute="leading" secondItem="ZSc-rh-AmB" secondAttribute="leading" constant="8" id="2v9-RT-BT5"/>
+                    <constraint firstAttribute="trailing" secondItem="OLg-oe-p3q" secondAttribute="trailing" constant="8" id="Sgo-Mf-a0g"/>
+                    <constraint firstAttribute="bottom" secondItem="OLg-oe-p3q" secondAttribute="bottom" id="h29-8A-hzP"/>
+                    <constraint firstItem="OLg-oe-p3q" firstAttribute="top" secondItem="ZSc-rh-AmB" secondAttribute="top" id="i0Q-Rv-09b"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="senderMessage" destination="dz2-nH-Ewh" id="Sjv-Dv-0dL"/>
+            </connections>
+            <point key="canvasLocation" x="162.5" y="119"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="send.png" width="194" height="35"/>
+    </resources>
+</document>

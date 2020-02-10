@@ -1,0 +1,6 @@
+framework module Pods_one_tone {
+  umbrella header "Pods-one tone-umbrella.h"
+
+  export *
+  module * { export * }
+}
